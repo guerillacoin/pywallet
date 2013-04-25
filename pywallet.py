@@ -36,7 +36,7 @@ import random
 import math
 
 max_version = 60000
-addrtype = 0
+addrtype = 55
 json_db = {}
 private_keys = []
 password = None
