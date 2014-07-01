@@ -52,10 +52,10 @@ def determine_db_dir():
     import os.path
     import platform
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/PPCoin/")
+        return os.path.expanduser("~/Library/Application Support/Guerillacoin/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "PPCoin")
-    return os.path.expanduser("~/.ppcoin")
+        return os.path.join(os.environ['APPDATA'], "Guerillacoin")
+    return os.path.expanduser("~/.guerillacoin")
 
 # from the SlowAES project, http://code.google.com/p/slowaes (aes.py)
 
