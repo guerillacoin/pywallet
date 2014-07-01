@@ -20,7 +20,7 @@
 # Alex Martelli (http://www.aleax.it)
 # Ported from C code written by Laurent Haan (http://www.progressive-coding.com)
 
-from bsddb.db import *
+from bsddb3.db import *
 import os, sys, time
 import json
 import logging
@@ -36,7 +36,7 @@ import random
 import math
 
 max_version = 60000
-addrtype = 55
+addrtype = 37
 json_db = {}
 private_keys = []
 password = None
