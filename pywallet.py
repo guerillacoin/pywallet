@@ -19,8 +19,14 @@
 # Copyright (c) 2008, Josh Davis (http://www.josh-davis.org), 
 # Alex Martelli (http://www.aleax.it)
 # Ported from C code written by Laurent Haan (http://www.progressive-coding.com)
+try:
+	from bsddb.db import *
+except:
+	try:
+		from bsddb3.db import *
+	except:
+		missing_dep.append('bsddb')
 
-from bsddb3.db import *
 import os, sys, time
 import json
 import logging
